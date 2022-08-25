@@ -5,4 +5,14 @@
 
 // [-4, -6, 89, 6] -> 0
 
+int[] array = new int[5];
+int size = array.Length;
+int sumOdd = 0;
+
+for (int i = 0; i < size; i++)
+{
+    array[i] = new Random().Next(-99, 100);
+    if (i % 2 != 0) sumOdd = sumOdd + array[i];
+}
+Console.WriteLine($"\n[{string.Join(", ", array)}] -> {sumOdd}");
 
