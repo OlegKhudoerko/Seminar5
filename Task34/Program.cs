@@ -7,10 +7,10 @@ int[] array = new int[10];
 int size = array.Length;
 int count = 0;
 
-for (int i = 0; i < size; i++) 
+for (int i = 0; i < size; i++)
 {
-array[i] = new Random().Next(100,1000);
-if (array[i]%2 == 0)    count++;
+    array[i] = new Random().Next(100, 1000);
+    if (array[i] % 2 == 0) count++;
 }
 Console.WriteLine($"[{string.Join(", ", array)}] -> {count}");
 
